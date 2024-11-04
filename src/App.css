@@ -1,0 +1,186 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes the container take at least the full height of the viewport */
+}
+
+main {
+  flex: 1; /* This allows the main section to grow and fill the space between the header and footer */
+  padding: 20px; /* Adds some padding around the main content */
+}
+
+.content {
+  text-align: center; /* Centers the content */
+  margin: 20px 0; /* Adds space above and below the content */
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0ea5e9; /* Typical trading yellow */
+  margin-right: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav__link:hover {
+  color: #38bdf8;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+/* search bar css */
+.s_label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.search_main {
+  position: relative;
+  margin-left: 10px;
+}
+
+.search_main input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  background-color: #334155;
+  color: #e2e8f0;
+  outline: none;
+}
+
+.search_bar {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background-color: #1e293b;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.s_container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.s_btn {
+  background: none;
+  color: #0ea5e9;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.s_btn:hover {
+  background-color: #334155;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 30px 60px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__sections {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+}
+
+.footer__section {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.footer__section h3 {
+  color: #f0b90b; /* Same yellow accent color */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  display: block;
+  color: #cccccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: #f0b90b;
+}
+
+.footer__socials .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #f0b90b;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+}
+
+.footer__bottom {
+  border-top: 1px solid #333;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 15px;
+  text-align: center;
+  color: #888888;
+  font-size: 0.8rem;
+}
